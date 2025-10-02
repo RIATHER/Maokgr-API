@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class AccountDTO {
-    String userName;
-    String password;
+    private String username;
+    private String email;
+    private String password;
 }
