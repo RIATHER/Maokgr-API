@@ -1,12 +1,16 @@
 package org.example.apimain.account.entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.example.apimain.account.enums.AccountStatus;
 
 import java.util.UUID;
 
 @Entity
 @Table(name = "accounts")
+@Getter
+@Setter
 public class AccountEntity {
 
     @Id
@@ -20,7 +24,7 @@ public class AccountEntity {
     private String email;
 
     @Column(name = "password_hash")
-    private String password_hash;
+    private String password;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", columnDefinition = "account_status")
