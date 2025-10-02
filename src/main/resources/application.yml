@@ -7,7 +7,7 @@ spring:
     password: admin_db
     driver-class-name: org.postgresql.Driver
   jpa:
-    show-sql: false
+    show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: none
+      ddl-auto: validate
