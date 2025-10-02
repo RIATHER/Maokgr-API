@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: API-MAIN
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_db
+    username: admin_db
+    password: admin_db
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
